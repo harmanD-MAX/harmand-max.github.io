@@ -1,0 +1,57 @@
+1:"$Sreact.fragment"
+2:I[5353,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0-q7oqmznvxx~.js"],"SiteNavbar"]
+3:I[22016,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0-q7oqmznvxx~.js"],""]
+4:I[6605,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0-q7oqmznvxx~.js"],"BlogArticleView"]
+9:I[97367,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+a:"$Sreact.suspense"
+5:T7ad,## The Core Challenge: Retries & Duplicate Executions
+
+In distributed architectures, network timeouts are inevitable. When a client sends a payment checkout or inventory reservation and experiences a TCP reset before receiving the response:
+- Did the request fail before reaching the database?
+- Or did the mutation succeed, but the response was dropped on the wire?
+
+Without **Idempotency Keys**, naive client retries result in duplicate charges or duplicate inventory reservations.
+
+```text
+   [ Client ] ──(Request + Idempotency-Key)──► [ API Gateway ]
+                                                      │
+                                             (Atomic Lua Check)
+                                                      ▼
+                                              [ Redis Cluster ]
+                                                ├── IN_PROGRESS ──► Block Duplicates
+                                                └── COMPLETED   ──► Return Cached Result
+```
+
+---
+
+## 1. Atomic State Machine in Redis with Lua
+
+To avoid race conditions between concurrent requests bearing the same idempotency key, we execute an atomic Lua script:
+
+```lua
+-- KEYS[1]: idempotency:key
+-- ARGV[1]: request_hash
+-- ARGV[2]: ttl_seconds (e.g. 86400)
+
+local current = redis.call('GET', KEYS[1])
+
+if current then
+    return current -- Return existing state (IN_PROGRESS or response JSON)
+else
+    -- Set IN_PROGRESS with TTL
+    redis.call('SET', KEYS[1], '{"status":"PROCESSING"}', 'EX', ARGV[2])
+    return nil -- Proceed to execute mutation
+end
+```
+
+---
+
+## 2. Distributed Locking & Deadlock Prevention
+
+> [!NOTE]
+> **Lease Expiration & Heartbeats**:
+> Never set infinite locks. Always attach a reasonable TTL ($30\text{s}$) to allow automatic recovery if a worker node crashes mid-flight. Once the backend completes the transaction, it updates the Redis key from `PROCESSING` to `COMPLETED` alongside the cached serialized payload.0:{"rsc":["$","$1","c",{"children":[[["$","div",null,{"className":"pointer-events-none fixed inset-0 overflow-hidden -z-10","aria-hidden":true,"children":[["$","div",null,{"className":"absolute inset-0 bg-background"}],["$","div",null,{"className":"absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,var(--accent-glow),transparent)] opacity-45"}],["$","div",null,{"className":"absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background/85"}]]}],["$","$L2",null,{}],["$","main",null,{"className":"relative z-10 flex min-h-dvh flex-col","children":[["$","div",null,{"className":"page-wrap py-10 md:py-16","children":[["$","div",null,{"className":"mx-auto max-w-3xl flex items-center justify-between border-b border-border/40 pb-4 mb-4","children":["$","$L3",null,{"href":"/blog","className":"mono inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors cursor-pointer","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":14,"height":14,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-left","aria-hidden":"true","children":[["$","path","1wnfg3",{"d":"m15 18-6-6 6-6"}],"$undefined"]}],["$","span",null,{"children":"Back to all articles"}]]}]}],["$","$L4",null,{"blog":{"id":"high-throughput-request-routing-redis","slug":"high-throughput-request-routing-idempotency-redis","title":"High-Throughput Request Routing & Idempotency Key Architecture with Redis Cluster","excerpt":"How to design at-least-once distributed request pipelines without duplicate mutations using atomic Redis Lua scripts, distributed locks, and sliding-window rate limiters.","category":"Backend Architecture","tags":["Redis","System Design","Idempotency","Distributed Systems","Backend Architecture"],"readTime":"8 min read","publishedAt":"Aug 24, 2026","isDraft":false,"author":{"name":"Harman","signature":"Harmanpreet Singh","role":"Backend & Distributed Systems Engineer"},"content":"$5"}}]]}],"$L6"]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"2vgM34H50mBIk6W_E22hn"}
+6:["$","footer",null,{"className":"page-wrap site-footer flex flex-col justify-between gap-4 border-t border-border/40 py-8 md:flex-row md:items-center mt-auto","children":[["$","div",null,{"className":"flex items-center","children":["$","span",null,{"className":"serif text-2xl font-normal italic tracking-tight text-foreground","children":["h",["$","span",null,{"className":"text-primary not-italic font-mono","children":"_"}]]}]}],["$","p",null,{"className":"serif italic text-sm text-foreground/75 text-center","children":"“From first principles to distributed scale.”"}],["$","span",null,{"className":"mono text-[0.68rem] text-muted-foreground/80 md:text-right","children":["harman_ · © ",2026]}]]}]
+7:["$","script","script-0",{"src":"/_next/static/chunks/0-q7oqmznvxx~.js","async":true}]
+8:["$","$L9",null,{"children":["$","$a",null,{"name":"Next.MetadataOutlet","children":"$@b"}]}]
+b:null

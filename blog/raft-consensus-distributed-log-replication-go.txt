@@ -1,0 +1,124 @@
+1:"$Sreact.fragment"
+2:I[39756,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[37457,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[97367,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+6:"$Sreact.suspense"
+9:I[97367,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+b:I[97367,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+d:I[68027,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0.-av6ncvrga_.css","style"]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.10_7676vm7pyy.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.0gq7fw9.sy_5..woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/fba5a26ea33df6a3-s.p.0eehd8tgys7nv.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"P":null,"c":["","blog","raft-consensus-distributed-log-replication-go"],"q":"","i":false,"f":[[["",{"children":["blog",{"children":[["slug","raft-consensus-distributed-log-replication-go","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0.-av6ncvrga_.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/01xlw8hd842-c.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","data-accent":"luxe","suppressHydrationWarning":true,"className":"plus_jakarta_sans_b071514f-module__EKRmmW__variable instrument_serif_918be5a8-module__YM44Yq__variable dark h-full scroll-smooth antialiased","children":["$","body",null,{"suppressHydrationWarning":true,"className":"min-h-dvh flex flex-col font-sans bg-background text-foreground","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L4",[["$","script","script-0",{"src":"/_next/static/chunks/0-q7oqmznvxx~.js","async":true,"nonce":"$undefined"}]],["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],{},null,false,null]},null,false,"$@8"]},null,false,"$@8"]},null,false,null],["$","$1","h",{"children":[null,["$","$L9",null,{"children":"$La"}],["$","div",null,{"hidden":true,"children":["$","$Lb",null,{"children":["$","$6",null,{"name":"Next.Metadata","children":"$Lc"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$d",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0.-av6ncvrga_.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"2vgM34H50mBIk6W_E22hn"}
+e:[]
+8:"$We"
+a:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:I[27201,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+7:null
+c:[["$","title","0",{"children":"Harman's Portfolio"}],["$","meta","1",{"name":"description","content":"Portfolio of Harman — CS student at University of Alberta. Backend Engineering, Distributed Systems, and Generative AI."}],["$","link","2",{"rel":"icon","href":"/assets/favicon.svg"}],["$","$Lf","3",{}]]
+10:I[5353,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0-q7oqmznvxx~.js"],"SiteNavbar"]
+11:I[22016,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0-q7oqmznvxx~.js"],""]
+12:I[6605,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0-q7oqmznvxx~.js"],"BlogArticleView"]
+13:Tb28,## The Consensus Challenge: Maintaining Consistency Across Unreliable Nodes
+
+In distributed computing, how do multiple independently failing nodes agree on a sequence of state updates over an asynchronous, lossy network?
+
+**Raft** was designed by Diego Ongaro and John Ousterhout (Stanford) as an understandable alternative to Multi-Paxos. It breaks the consensus problem into three strictly decoupled subproblems:
+1. **Leader Election**
+2. **Log Replication**
+3. **Safety & State Machine Commit Invariants**
+
+```text
+   [ Follower ] ──(Election Timeout)──► [ Candidate ]
+        ▲                                    │
+        │                               (Wins Quorum)
+        │                                    ▼
+        └────────(Discovers Higher Term)──── [ Leader ]
+```
+
+---
+
+## 1. Structuring the Raft Peer in Go
+
+Here is the clean core definition of a Raft node utilizing Go channels and non-blocking timers:
+
+```go
+package raft
+
+import (
+	"sync"
+	"time"
+)
+
+type NodeRole int
+
+const (
+	Follower NodeRole = iota
+	Candidate
+	Leader
+)
+
+type LogEntry struct {
+	Index   int
+	Term    int
+	Command interface{}
+}
+
+type RaftNode struct {
+	mu        sync.Mutex
+	peers     []string
+	nodeID    string
+	role      NodeRole
+	currentTerm int
+	votedFor    string
+	log         []LogEntry
+
+	// Volatile state on all servers
+	commitIndex int
+	lastApplied int
+
+	// Volatile state on leaders
+	nextIndex  map[string]int
+	matchIndex map[string]int
+
+	heartbeatTimer *time.Timer
+	electionTimer  *time.Timer
+}
+```
+
+---
+
+## 2. Preventing Split-Brain via Randomized Election Timers
+
+When nodes lose contact with a leader, they transition to the `Candidate` state and increment `currentTerm`. To prevent split-vote scenarios where two candidates continually divide the vote:
+
+> [!NOTE]
+> **Randomized Election Windows**:
+> Each follower sets its election timeout randomly between **$150\text{ms}$ and $300\text{ms}$**. This ensures one node times out first, broadcasts `RequestVote` RPCs, and collects a majority quorum before competitors wake up.
+
+```go
+func (rn *RaftNode) resetElectionTimer() {
+	if rn.electionTimer != nil {
+		rn.electionTimer.Stop()
+	}
+	// Randomized jitter: [150ms, 300ms)
+	d := time.Duration(150+rand.Intn(150)) * time.Millisecond
+	rn.electionTimer = time.AfterFunc(d, func() {
+		rn.mu.Lock()
+		defer rn.mu.Unlock()
+		if rn.role != Leader {
+			rn.startElection()
+		}
+	})
+}
+```
+
+---
+
+## 3. Log Invariant & Majority Commit
+
+A log entry is **committed** once it is securely stored on a strict majority ($N/2 + 1$) of nodes. The leader tracks `matchIndex` for every follower, and once the median index exceeds the current commit index in the active term, it advances the state machine.
+
+This deterministic invariant guarantees that no committed command will ever be lost or overwritten by future term leaders.4:[["$","div",null,{"className":"pointer-events-none fixed inset-0 overflow-hidden -z-10","aria-hidden":true,"children":[["$","div",null,{"className":"absolute inset-0 bg-background"}],["$","div",null,{"className":"absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,var(--accent-glow),transparent)] opacity-45"}],["$","div",null,{"className":"absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background/85"}]]}],["$","$L10",null,{}],["$","main",null,{"className":"relative z-10 flex min-h-dvh flex-col","children":[["$","div",null,{"className":"page-wrap py-10 md:py-16","children":[["$","div",null,{"className":"mx-auto max-w-3xl flex items-center justify-between border-b border-border/40 pb-4 mb-4","children":["$","$L11",null,{"href":"/blog","className":"mono inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors cursor-pointer","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":14,"height":14,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-left","aria-hidden":"true","children":[["$","path","1wnfg3",{"d":"m15 18-6-6 6-6"}],"$undefined"]}],["$","span",null,{"children":"Back to all articles"}]]}]}],["$","$L12",null,{"blog":{"id":"raft-consensus-log-replication-go","slug":"raft-consensus-distributed-log-replication-go","title":"Raft Consensus & Distributed Log Replication in Go: Building a Fault-Tolerant State Machine","excerpt":"A deep breakdown of leader election, randomized split-vote timers, heartbeat replication quorums, and log compaction—building a deterministic distributed state machine from scratch in Go.","category":"Distributed Systems","tags":["Go","Raft","Distributed Systems","Consensus","Fault Tolerance"],"readTime":"9 min read","publishedAt":"Sep 03, 2026","isDraft":false,"author":{"name":"Harman","signature":"Harmanpreet Singh","role":"Backend & Distributed Systems Engineer"},"content":"$13"}}]]}],"$L14"]}]]
+14:["$","footer",null,{"className":"page-wrap site-footer flex flex-col justify-between gap-4 border-t border-border/40 py-8 md:flex-row md:items-center mt-auto","children":[["$","div",null,{"className":"flex items-center","children":["$","span",null,{"className":"serif text-2xl font-normal italic tracking-tight text-foreground","children":["h",["$","span",null,{"className":"text-primary not-italic font-mono","children":"_"}]]}]}],["$","p",null,{"className":"serif italic text-sm text-foreground/75 text-center","children":"“From first principles to distributed scale.”"}],["$","span",null,{"className":"mono text-[0.68rem] text-muted-foreground/80 md:text-right","children":["harman_ · © ",2026]}]]}]
